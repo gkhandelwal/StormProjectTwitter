@@ -1,0 +1,29 @@
+{
+  "name": "msba-storm-twitter-project",
+  "version": "0.2.5",
+  "description": "Group Project implementing Twitter Trends in Real Time Streaming",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chart.js": "^2.4.0",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "redis": "^2.6.3",
+    "socket.io": "^1.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umn-5117-f16/module-2-individual-homework-gkhandelwal"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trending Topics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="http://www.chartjs.org/assets/Chart.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="style.css"  type="text/css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+</head>
+<body>
+    <div class="container">
+      <div class="jumbotron">
+        <div class = "row">
+        <div class="col-md-2">
+              <img src="twitter.png" style="width:100px;height:100px;" />
+        </div>
+        <div class="col-md-10">
+                <h1>Twitter Trending Topics</h1>
+        </div>
+        <div class="col-md-4">
+		    <div id="map1" style="width: 400px; height: 400px;"></div>
+		</div>
+		<div class="col-md-4">
+		    <div id="map2" style="width: 400px; height: 400px;"></div>
+		</div>
+        <div class="chart">
+            <canvas id="myChart1" width="400" height="400"></canvas>
+            <canvas id="myChart2" width="400" height="400"></canvas>
+            <canvas id="myChart3" width="400" height="400"></canvas>
+        </div>
+      </div>
+      </div>
+
+              <div class="tweetScroll">
+                  <div class="tweetEntries0  col-xs-10 col-md-6 col-sm-6 col-lg-4"></div>
+                  <div class="tweetEntries1  col-xs-10 col-md-6 col-sm-6 col-lg-4"></div>
+                  <div class="tweetEntries2  col-xs-10 col-md-6 col-sm-6 col-lg-4"></div>
+                  <div class="tweetEntries3  col-xs-10 col-md-6 col-sm-6 col-lg-4"></div>
+                  <div class="tweetEntries4  col-xs-10 col-md-6 col-sm-6 col-lg-4"></div>
+                  <div class="tweetEntries5  col-xs-10 col-md-6 col-sm-6 col-lg-4"></div>
+              </div>
+    </div>
+</body>
+</html>
